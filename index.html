@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>JQuery Crystal Collector</title>
+</head>
+
+<body>
+
+    <div class="w-25 Nav">
+        <div class="row">
+            <div class="col-sm">
+                <h1>CrystalsCollector!</h1>
+            </div>
+        </div>
+    </div>
+    <div class="text w-50">
+        <div class="row">
+            <div class="col-sm">
+                <p>You will be given a random number at the start of the game.<br><br> There are four crystal below. By
+                    clicking on a crystal you will add a specific amount of points to your total score.<br><br>You win
+                    the game by matching your total score to random number, you lose the game if your total score goes
+                    above the random number.<br><br>The value of each crystal is hidden from you until you click on
+                    it.<br><br>Each time when the game starts, the game will change the value of each crystal.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row status">
+        <div class="col-sm-2 Number">
+
+            <p>Number:</p>
+        </div>
+        <div class="col-sm-1 gameStatistics">
+            <p> Wins: <span id="win"> </span></p>
+            <p> Losses: <span id="lost"> </span></p>
+        </div>
+    </div>
+
+    <div class="row">
+        <img id="stone3" src="assets/images/ruby.jpg" class="image">
+        <img id="stone4" src="assets/images/sapphire.jpg" class="image">
+        <img id="stone1" src="assets/images/diamond.jpg" class="image">
+        <img id="stone2" src="assets/images/emerald.jpg" class="image">
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2 score">
+            <p>Your Total Score is:</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 scoreCount" id="score"></div>
+    </div>
+
+    <script type="text/javascript" src="assests/javascript/game.js"></script>
+</body>
+
+</html>
